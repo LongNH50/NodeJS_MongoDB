@@ -1,0 +1,27 @@
+GET  http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients
+
+###
+GET  http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c8f
+
+###
+POST http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients
+Content-Type: application/json
+
+    {
+      "name": "salt",
+      "amount": "1 1/2 tbsp"
+    }
+
+
+###
+
+PATCH    http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c8f
+Content-Type: application/json
+
+{"amount": "A couple of pinches"}
+
+###
+
+DELETE  http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c8f
+
+###

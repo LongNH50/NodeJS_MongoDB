@@ -1,0 +1,26 @@
+GET  http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c90/brands
+
+###
+GET  http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c90/brands/64360983c1dbd5639a4fc21b
+
+###
+POST http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c90/brands
+Content-Type: application/json
+
+    {
+      "name": "Himalayan Salt 3333333"
+    }
+
+
+###
+
+PATCH    http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c90/brands/64360983c1dbd5639a4fc21b
+Content-Type: application/json
+
+{"name": "new Brand"}
+
+###
+
+DELETE   http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e/ingredients/6435c85ecf1c34c22ef66c90/brands/643616d06ab618719d045b64
+
+###

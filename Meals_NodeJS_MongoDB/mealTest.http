@@ -1,0 +1,54 @@
+GET http://localhost:3000/meals
+
+###
+GET http://localhost:3000/meals/6435bc6a6f0abfdd44c9f8a4
+
+###
+POST http://localhost:3000/meals
+Content-Type: application/json
+
+{
+  "title": "Spaghetti Bolognese",
+  "category": { "name": "Pasta" },
+  "ingredients": [
+    {"name": "Spaghetti", "amount": "250g" , "brands":[]},
+    {"name": "Ground Beef", "amount": "500g" , "brands":[]},
+    {"name": "Tomato Sauce", "amount": "500ml", "brands":[] }
+  ]
+}
+
+###
+POST http://localhost:3000/meals
+Content-Type: application/json
+
+{
+  "title": "Caesar Salad",
+  "category": { "name": "salad" },
+  "ingredients": [
+    {"name": "vegetable", "amount": "250g" , "brands":[]},
+    {"name": "oil", "amount": "50ml" , "brands":[]}
+  ]
+}
+
+
+###
+PATCH   http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e
+Content-Type: application/json
+
+{
+    "title": "New_Spaghetti"
+
+}
+
+
+###
+DELETE http://localhost:3000/meals/6435c85ecf1c34c22ef66c8e
+
+
+###
+patch  http://localhost:3000/meals/1/picture
+Content-Type: application/json
+
+{
+    "pictures": [{ "filename": "1570286884.jpg"}, { "filename": "1570286885.jpg"}]
+}
